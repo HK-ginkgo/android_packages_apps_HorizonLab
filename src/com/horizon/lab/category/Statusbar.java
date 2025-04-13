@@ -16,6 +16,7 @@
 package com.horizon.lab.category;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,21 +29,28 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
-import androidx.preference.Preference.OnPreferenceChangeListener;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.settings.custom.preference.SystemSettingListPreference;
+
 import com.android.internal.logging.nano.MetricsProto;
+
+import com.horizon.lab.utils.TelephonyUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @SearchIndexable
-public class Statusbar extends SettingsPreferenceFragment {
+public class Statusbar extends SettingsPreferenceFragment  {
+
+    private static final String KEY_SHOW_FOURG = "show_fourg_icon";
+
+    private SwitchPreference mShowFourg;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -50,8 +58,22 @@ public class Statusbar extends SettingsPreferenceFragment {
         addPreferencesFromResource(R.xml.category_statusbar);
         PreferenceScreen prefSet = getPreferenceScreen();
 
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        mShowFourg = (SwitchPreference) findPreference(KEY_SHOW_FOURG);
+
+        if (!TelephonyUtils.isVoiceCapable(getActivity())) {
+            prefSet.removePreference(mShowFourg);
+        }
     }
 
+
+    public static void reset(Context mContext) {
+        ContentResolver resolver = mContext.getContentResolver();
+
+        Settings.System.putIntForUser(resolver,
+                Settings.System.WIFI_STANDARD_ICON, 0, UserHandle.USER_CURRENT);
+    }
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.HORIZON;
@@ -70,6 +92,11 @@ public class Statusbar extends SettingsPreferenceFragment {
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     final List<String> keys = super.getNonIndexableKeys(context);
+
+                    if (!TelephonyUtils.isVoiceCapable(context)) {
+                        keys.add(KEY_SHOW_FOURG);
+                    }
+
                     return keys;
                 }
             };

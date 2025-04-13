@@ -28,7 +28,7 @@
     <string name="category_lock_title">LockScreen</string>
     <string name="category_notif_title">Notifications</string>
 
-    <!-- About HorizonDroid -->
+<!-- About HorizonDroid -->
     <string name="hz_about_title">About HorizonDroid</string>
     <string name="hz_about_summary">Everything about us.</string>
     <string name="hz_about_link">Visit and join</string>
@@ -36,7 +36,7 @@
     <string name="hz_telegram_summary">Join our community chat</string>
     <string name="hz_github_title" translatable="false">GitHub</string>
     <string name="hz_github_summary">Check out our GitHub</string>
-    <string name="hz_about_info_summary">HorizonDroid is a Custoom ROM with minimal usefull features.</string>
+    <string name="hz_about_info_summary">HorizonDroid Base On Aosp and LineageOS allows users to experience Google latest Pixel updates while integrating useful features from known custom ROMs. We currently support Android 15, with the latest security patches from Google.</string>
 
     <!-- About Develover -->
     <string name="hz_about_dev">Developer</string>
@@ -46,5 +46,58 @@
     <!-- Wi-Fi Standard icon -->
     <string name="show_wifi_standard_icon_title">Show Wi-Fi type icon</string>
     <string name="show_wifi_standard_icon_summary">Show Wi-Fi type in Wi-Fi signal indicator</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Notification count</string>
+    <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
+
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in status bar</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
+    <!-- Screen Off animation -->
+    <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_default">Default</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Scale</string>
+
+    <!-- Ongoing progress bar chip in statusbar --> 
+    <string name="ongoing_action_chip_title">Ongoing progress bar chip</string>
+    <string name="ongoing_action_chip_summary">Show progress bar chip in status bar which features ongoing action progress from a notification</string>
+
+    <!-- Application downgrade -->
+    <string name="app_downgrade_title">Allow application downgrade</string>
+    <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption.</string>
+
+    <!-- Data usage info in QS footer -->
+    <string name="qs_footer_datausage_title">Data usage</string>
+    <string name="qs_footer_datausage_summary">Display data usage summary in quick settings footer</string>
+
+     <!-- Unlimited Photos storage -->
+    <string name="photos_spoof_title">Unlimited Photos storage</string>
+    <string name="photos_spoof_summary">Spoof your device as Pixel XL for the Google Photos app only to provide unlimited storage for backup</string>
+
+    <!-- Unlock FPS for specific games -->
+    <string name="games_spoof_title">Unlock higher FPS in games</string>
+    <string name="games_spoof_summary">Spoof your device as a different model for specific games to unlock higher FPS</string>
+
+    <!-- Spoof storage encryption status -->
+    <string name="spoof_storage_encryption_status_title">Use storage encryption spoofing</string>
+    <string name="spoof_storage_encryption_status_summary">Spoof storage encryption status to encrypted.</string>
+
+    <!-- Netflix Spoof -->
+    <string name="netflix_spoof_title">Netflix spoof</string>
+    <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
+
+    <!-- Ignore window secure -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">This removes the screenshots and screenrecords limits for all applications. Normally, special applications are replaced with black areas in records. This can be convenient in some cases but may lead to privacy leaks. After changing this toggle, you may need to restart applications for the change to take effect.</string>
+
+    <!-- Navigation Bar -->
+    <string name="navigation_bar_enable_taskbar_title">Enable taskbar</string>
 
 </resources> 

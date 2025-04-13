@@ -8,11 +8,29 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/category_statusbar_title" >
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="ongoing_action_chip"
+          android:title="@string/ongoing_action_chip_title"
+          android:summary="@string/ongoing_action_chip_summary"
+          android:defaultValue="true" />
+
+     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="statusbar_colored_icons"
+          android:title="@string/statusbar_colored_icons_title"
+          android:summary="@string/statusbar_colored_icons_summary"
+          android:defaultValue="false" />
+
+     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="statusbar_notif_count"
+          android:title="@string/status_bar_notif_count_title"
+          android:summary="@string/status_bar_notif_count_summary"
+          android:defaultValue="false" />
+
      <!-- wifi_standard_icon -->
-     <com.android.settings.preferences.SystemSettingSwitchPreference
-     android:key="wifi_standard_icon"
-     android:title="@string/show_wifi_standard_icon_title"
-     android:summary="@string/show_wifi_standard_icon_summary"
-     android:defaultValue="true"/>
+     <com.android.settings.custom.preference.SystemSettingSwitchPreference
+          android:key="wifi_standard_icon"
+          android:title="@string/show_wifi_standard_icon_title"
+          android:summary="@string/show_wifi_standard_icon_summary"
+          android:defaultValue="true"/>
 
 </PreferenceScreen>

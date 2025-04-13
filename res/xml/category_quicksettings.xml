@@ -8,4 +8,15 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_quicksettings_title" >
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="qs_show_data_usage"
+        android:title="@string/qs_footer_datausage_title"
+        android:summary="@string/qs_footer_datausage_summary" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:title="Brightness Percentage"
+        android:key="BRIGHTNESS_TEXTVIEW"
+        android:summary="show hide brightness percentage text"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

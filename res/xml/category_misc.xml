@@ -8,4 +8,16 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_misc_title" >
 
+    <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+        android:key="pm_downgrade_allowed"
+        android:title="@string/app_downgrade_title"
+        android:summary="@string/app_downgrade_summary"
+        android:defaultValue="false" />
+
+    <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
