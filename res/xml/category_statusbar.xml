@@ -8,4 +8,11 @@
      xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
      android:title="@string/category_statusbar_title" >
 
+     <!-- wifi_standard_icon -->
+     <com.android.settings.preferences.SystemSettingSwitchPreference
+     android:key="wifi_standard_icon"
+     android:title="@string/show_wifi_standard_icon_title"
+     android:summary="@string/show_wifi_standard_icon_summary"
+     android:defaultValue="true"/>
+
 </PreferenceScreen>
