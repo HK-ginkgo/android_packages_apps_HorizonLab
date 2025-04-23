@@ -12,9 +12,16 @@
     <com.android.settings.custom.preference.SystemSettingListPreference
         android:key="screen_off_animation"
         android:title="@string/screen_off_animation_title"
+        android:summary="@string/screen_off_animation_summary"
         android:dialogTitle="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
-        android:defaultValue="0" />
+        android:defaultValue="1" />
+
+     <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+        android:key="pie_animation_style"
+        android:title="@string/pie_animation_style_title"
+        android:summary="@string/pie_animation_style_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>

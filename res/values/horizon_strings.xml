@@ -62,6 +62,7 @@
 
     <!-- Screen Off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
+    <string name="screen_off_animation_summary">Choice style</string>
     <string name="screen_off_animation_default">Default</string>
     <string name="screen_off_animation_crt">CRT</string>
     <string name="screen_off_animation_scale">Scale</string>
@@ -103,9 +104,11 @@
 
     <!-- Button settings -->
     <string name="button_pref_title">Buttons</string>
+    <string name="button_pref_summary">Customize the behavior of navigation, volume, and power buttons to suit your usage and control needs</string>
 
     <!-- Gesture -->
     <string name="gesture_preference_title">Gestures</string>
+    <string name="gesture_preference_summary">Configure gestures for navigation and shortcuts to improve ease of use and device interaction</string>
 
     <!-- Status bar - icons -->
     <string name="status_bar_title">Status Bar Custom</string>
@@ -114,4 +117,9 @@
     <!-- Lockscreen battery info indicator -->
     <string name="lockscreen_battery_info_title">Battery info</string>
     <string name="lockscreen_battery_info_summary">Display battery info when charging</string>
+
+    <!-- Android P animation style -->
+    <string name="pie_animation_style_title">Android P animation style</string>
+    <string name="pie_animation_style_summary">Enable Android P \"Default\" animations</string>
+
 </resources> 

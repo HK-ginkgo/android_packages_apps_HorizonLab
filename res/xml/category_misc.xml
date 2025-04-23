@@ -8,9 +8,21 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_misc_title" >
 
+    <!-- GameSpace -->
+    <Preference
+        android:key="game_space"
+        android:title="@string/game_space_title"
+        android:summary="@string/game_space_summary">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="io.chaldeaprjkt.gamespace"
+            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+    </Preference>
+
     <Preference
             android:key="button_settings"
-            android:title="@string/button_pref_title">
+            android:title="@string/button_pref_title"
+            android:summary="@string/button_pref_summary">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="org.lineageos.lineageparts"
@@ -20,6 +32,7 @@
      <Preference
             android:key="gesture_settings"
             android:title="@string/gesture_preference_title"
+            android:summary="@string/gesture_preference_summary"
             android:fragment="com.android.settings.gestures.GestureSettings"
             settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController"/>
 
@@ -34,16 +47,5 @@
         android:title="@string/ignore_window_secure_title"
         android:summary="@string/ignore_window_secure_summary"
         android:defaultValue="false"/>
-
-    <!-- GameSpace -->
-    <Preference
-        android:key="game_space"
-        android:title="@string/game_space_title"
-        android:summary="@string/game_space_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="io.chaldeaprjkt.gamespace"
-            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
-    </Preference>
 
 </PreferenceScreen>
