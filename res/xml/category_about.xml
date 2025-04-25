@@ -51,4 +51,24 @@
                 android:data="https://t.me/superxorn" />
         </Preference>
 
+        <Preference
+            android:title="@string/hz_about_rve"
+            android:summary="@string/hz_about_rve_summary"
+            android:icon="@drawable/rve"
+            settings:layout="@layout/hz_about">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/rve27" />
+        </Preference>
+
+        <Preference
+            android:title="@string/hz_about_skyy"
+            android:summary="@string/hz_about_skyy_summary"
+            android:icon="@drawable/skyy"
+            settings:layout="@layout/hz_about">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://t.me/HinohArata" />
+        </Preference>
+
 </PreferenceScreen>

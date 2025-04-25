@@ -8,6 +8,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/category_notif_title" >
 
+    <!-- Edge light -->
+        <Preference
+            android:key="edge_light_settings"
+            android:title="@string/notifications_edge_light_title"
+            android:summary="@string/notifications_edge_light_summary"
+            android:fragment="com.horizon.fragments.notifications.EdgeLightSettings" />
+
     <!-- Heads up -->
     <lineageos.preference.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
