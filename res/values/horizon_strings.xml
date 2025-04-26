@@ -148,4 +148,8 @@
     <string name="show_squiggle_animation_title">Show squiggle animation</string>
     <string name="show_squiggle_animation_summary">Show media panel squiggle animation\nAfter change need to switch music, pause music or move the progress bar to apply</string>
 
+    <!-- Heads-up -->
+    <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
+    <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
+
 </resources> 
